@@ -1,0 +1,113 @@
+  480  mkdir homework_1
+  481  cd homework_1
+  482  git clone https://github.com/Weakne55/Bioinformatics305.git
+  483  ls
+  484  cd Bioinformatics305
+  485  git remote remove origin
+  486  git remote -v
+  487  git remote add origin https://github.com/anton-igrokov/homework_1
+  488  git remote -v
+  489  ls
+  490  cd lab_disaster
+  491  ls
+  492  rm -r raw_data/*.tmp
+  493  git add raw_data/
+  494  git commit -m "Temporary raw data deleted"
+  495  git log
+  496  cd raw_data
+  497  ls
+  498  grep -h
+  499  grep --help
+  500  grep "TCGA" huge_sequencing_run.fastq
+  501  grep "TGCA" huge_sequencing_run.fastq
+  502  grep -c "TGCA" huge_sequencing_run.fastq
+  503  grep "TGCA" huge_sequencing_run.fastq > infected_reads.txt
+  504  ls
+  505  head -n 100 infected_reads.txt
+  506  git checkout -b investigation
+  507  git add infected_reads.txt
+  508  git commit -m "Sent infected reads for investigation"
+  509  {head -n 50 huge_sequencing_run.fastq; tail -n 50 huge_sequencing_run.fastq; } > mini_run.fastq
+  510  ls
+  511  git add mini_run.fastq
+  512  git commit -m "Sent mini run for investigation"
+  513  git log
+  514  ls
+  515  cd ..
+  516  ls
+  517  rm experiment.log
+  518  ls
+  519  git status
+  520  git restore experiment.log
+  521  nano command.txt
+  522  cat command.txt
+  523  git add command.txt
+  524  git branch
+  525  git reset command.txt
+  526  git status
+  527  git switch main
+  528  git switch master
+  529  git add command.txt
+  530  git commit -m "Command for restoring"
+  531  nano access.log
+  532  sort access.log
+  533  sort access.log > access.log
+  534  cat access.log
+  535  nano access.log
+  536  rm access.log
+  537  ls
+  538  nano access.log
+  539  sort -o access.log access.log
+  540  cat access.log
+  541  uniq -c access.log | sort > sort.txt
+  542  cat sort.txt
+  543  nano sort.txt
+  544  rm access.log 
+  545  rm sort.txt
+  546  ls
+  547  nano access.log
+  548  cat access.log
+  549  sort -o access.log access.log
+  550  cat access.log
+  551  nano access.log
+  552  uniq -c access.log | sort > sort.txt
+  553  cat sort.txt
+  554  git add sort.txt
+  555  git commit -m 'Sorted accesses'
+  556  git merge investigation
+  557  tr ' ' ',' < genes.tsv > genes_fixed.csv
+  558  cat genes_fixed.csv
+  559  git add genes_fixed.csv
+  560  git commit 'Adding fixed genes'
+  561  git commit -m 'Adding fixed genes'
+  562  find -type f -size +1K
+  563  find --type f -size +1K
+  564  find -t f -size +1K
+  565  find . --type f -size +1K
+  566  find --version
+  567  find --version\nfind: illegal option -- -\nusage: find [-H | -L | -P] [-EXdsx] [-f path] path ... [expression]\n       find [-H | -L | -P] [-EXdsx] -f path [path ...] [expression]
+  568  find -H
+  569  find . -type f -size +1k
+  570  find . -type f -size +1k > diskusage.file\n
+  571  find *.fastq -type f\n
+  572  find . -type f -name "*.fastq" -exec du -h {} \; >> diskusage.file
+  573  cat diskusage.file
+  574  git switch cleaning
+  575  git checkout -b cleaning
+  576  git add diskusage.file
+  577  git commit -m 'added file sizes etc'
+  578  nano pep.faa
+  579  git add pep.faa
+  580  git commit -m 'my commit gool'
+  581  git rev-parse HEAD
+  582  nano forgotten.txt
+  583  git add forgotten.txt
+  584  git commit --amend --no-edit
+  585  git log
+  586  nano amend.txt
+  587  git switch master
+  588  git add amend.txt
+  589  git commit -m "adding amend file"
+  590  history
+  591  history 109
+  592  history 480
