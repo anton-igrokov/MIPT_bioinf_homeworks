@@ -1,0 +1,16 @@
+# системный мусор
+.DS_Store
+Thumbs.db
+*~
+
+# python
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.venv/
+venv/
+
+# R
+.Rhistory
+.RData
+.Rproj.user/

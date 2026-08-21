@@ -1,0 +1,12 @@
+name: bio_advanced
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  - python=3.10
+  - pandas
+  - numpy
+  - scipy
+  - seaborn>0.12.0
+  - jupyterlab
+  - conda-forge::biopython
